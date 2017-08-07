@@ -139,7 +139,7 @@ void wrmsr_on_cpu(uint32_t reg, int cpu, int valcnt, char *regvals[])
     int fd;
     char msr_file_name[64];
 
-    sprintf(msr_file_name, "/dev/cpu/%d/msr", cpu);
+    sprintf(msr_file_name, "/dev/cpu/%d/msr_safe", cpu);
     fd = open(msr_file_name, O_WRONLY);
     if (fd < 0) {
         if (errno == ENXIO) {
