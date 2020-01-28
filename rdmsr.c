@@ -77,6 +77,7 @@ const char *program;
 void usage(void)
 {
     fprintf(stderr,
+        "Optimized for msr-safe\n"
         "Usage: %s [options] regno\n"
         "  --help         -h  Print this help\n"
         "  --version      -V  Print current version\n"

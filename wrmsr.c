@@ -45,7 +45,9 @@ const char *program;
 
 void usage(void)
 {
-    fprintf(stderr, "Usage: %s [options] regno value...\n"
+    fprintf(stderr,
+        "Optimized for msr-safe\n"
+        "Usage: %s [options] regno value...\n"
         "  --help         -h  Print this help\n"
         "  --version      -V  Print current version\n"
         "  --all          -a  all processors\n"
